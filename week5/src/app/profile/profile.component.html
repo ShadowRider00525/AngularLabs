@@ -1,0 +1,12 @@
+<h1>Profile Page</h1>
+<div id="updatedetails">
+    <form id="updateform">
+        <label for="email">Username: </label>
+        <input type="text" id="username" [(ngModel)]='username' name ="username"/> <br>
+        <label for="birthday">Birthday: </label>
+        <input type="text" id="birthday" [(ngModel)]='birthday' name="birthday" /> <br>
+        <label for="age">Age: </label>
+        <input type="text" id="age" [(ngModel)]='age' name="age" /> <br>
+        <button (click)="updateItem()">Update</button>
+    </form>
+</div>

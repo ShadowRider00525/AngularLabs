@@ -1,0 +1,12 @@
+<h1>Login Page</h1>
+<div id="loginpage">
+    <form id="signin">
+        <label for="email">Email Address: </label>
+        <input type="text" [(ngModel)]='email' name ="email"/> <br>
+        <label for="pass">Password: </label>
+        <input type="password" [(ngModel)]='pass' name="pass" /> <br>
+        <button (click)="itemClicked()">Sign in</button>
+        <button (click)="logOut()">Logout</button>
+        <div id='errormsg'>{{errormsg}}</div>
+    </form>
+</div>
